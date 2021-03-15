@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(44, 73, 71, 0.8);
   transition: 0.4s;
 }
 
@@ -331,9 +331,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #8dc2fa;
+.mobile-nav a:hover, .mobile-nav li:hover > a {
+  /*color: #8dc2fa;*/
+  color: #009f65;
   text-decoration: none;
+}
+.mobile-nav .active > a{
+    color: #425e4f;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .mobile-nav .drop-down > a:after {
@@ -388,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(115, 209, 191, 0.8);
   overflow: hidden;
   display: none;
 }
@@ -1735,4 +1742,17 @@ section {
 
 .card-berita{
   position: absolute;
+}
+
+.modal-open .modal {
+    background: rgba(44, 73, 71, 0.8);
+}
+
+.text-head-pt{
+
+}
+.img-pt-fluid{
+  width: 100%;
+  padding: 0px;
+
 }

@@ -26,8 +26,8 @@
 											<br>
 											YKEP
 										</p>
-										<p>
-											BACA SELENGKAPNYA <button class="btn btn-sm btn-danger"> > </button>
+										<p class="text-btn-pengurus mb-0 btn-pengurus" v-on:cick="openModalPengurus()">
+											BACA SELENGKAPNYA <a class="text-danger"><i class="fa fa-chevron-circle-right"></i></a>
 										</p>
 									</div>
 								</div>
@@ -125,4 +125,23 @@
 		padding-left: 1em;
 		padding-top: 2em;
 	}
+	.text-btn-pengurus{
+		font-size: 14px;
+	}
+	.text-btn-pengurus a{
+		font-size: 17px;
+	}
+	.btn-pengurus:hover{
+		cursor: pointer;
+	}
 </style>
+
+<script>
+	export default {
+		methods:{
+			openModalPengurus(){
+				console.log('a')
+			}
+		}
+	};
+</script>

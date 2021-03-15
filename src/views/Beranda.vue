@@ -95,7 +95,7 @@
 								<!-- <div class="card kegiatan-parent">
 									<img class="card-img-top pict-berita" src="@/assets/img/kegiatan-pendidikan.png" alt="Card image cap">
 								</div> -->
-								<div class="col-4 mx-auto">
+								<div class="col-lg-4 col-sm-6 mx-auto">
 									<div class="card text-white">
 										<img class="card-img" src="@/assets/img/foto-berita.png" alt="Card image">
 										<div class="card-img-overlay">
@@ -105,8 +105,8 @@
 								</div>	
 							</div>
 							<div class="row mt-3 justify-content-md-center">
-								<div class="col-4">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('unjanicimahi')">
+								<div class="col-lg-4 col-sm-5">
+									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI CIMAHI')">
 										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-unjani.png" alt="Card image cap">
 										<div class="card-body">
 											<p class="card-text mb-0">UNJANI CIMAHI</p>
@@ -116,8 +116,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('stikescimahi')">
+								<div class="col-lg-4 col-sm-5">
+									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('STIKES CIMAHI')">
 										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-stikes.png" alt="Card image cap">
 										<div class="card-body">
 											<p class="card-text mb-0">STIKES CIMAHI</p>
@@ -127,8 +127,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('unjanijojga')">
+								<div class="col-lg-4 col-sm-5">
+									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI JOGJA')">
 										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-unjani-jogja.png" alt="Card image cap">
 										<div class="card-body">
 											<p class="card-text mb-0">UNJANI JOGJA</p>
@@ -142,7 +142,7 @@
 						</div>
 						<div class="col text-center">
 							<div class="row">
-								<div class="col-4 mx-auto">
+								<div class="col-lg-4 col-sm-6 mx-auto">
 									<div class="card text-white">
 										<img class="card-img" src="@/assets/img/foto-berita.png" alt="Card image">
 										<div class="card-img-overlay">
@@ -152,15 +152,15 @@
 								</div>
 							</div>
 							<div class="row justify-content-md-center mt-3">
-								<div class="col-3">
-									<div class="card bg-1 text-white card-pt-list" v-on:click="openModalPt('bumy')">
+								<div class="col-lg-3 col-sm-5">
+									<div class="card bg-1 text-white card-pt-list" v-on:click="openModalPt('BUMY')">
 										<div class="card-body">
 											<h5 class="card-title mt-4 mb-4">BUMY</h5>
 										</div>
 									</div>
 								</div>
-								<div class="col-3">
-									<div class="card bg-1 text-white card-pt-list" v-on:click="openModalPt('mitra')">
+								<div class="col-lg-3 col-sm-5">
+									<div class="card bg-1 text-white card-pt-list" v-on:click="openModalPt('MITRA')">
 										<div class="card-body">
 											<h5 class="card-title mt-4 mb-4">MITRA</h5>
 										</div>
@@ -173,13 +173,13 @@
 				<div class="container mt-5">
 					<ol class="level-2-kegiatan-wrapper text-center">
 						<li>
-							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1">Bidang <br>Sosial</h5>
+							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1" v-on:click="openModalBidang('Bidang Sosial')">Bidang <br>Sosial</h5>
 						</li>
 						<li>
-							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1">Bidang <br>Keagamaan</h5>
+							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1" v-on:click="openModalBidang('Bidang Keagamaan')">Bidang <br>Keagamaan</h5>
 						</li>
 						<li>
-							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1">Bidang <br>Kemanusiaan</h5>
+							<h5 class="level-2-kegiatan rectangle card-bidang-list bg-1" v-on:click="openModalBidang('Bidang Kemanusiaan')">Bidang <br>Kemanusiaan</h5>
 						</li>
 					</ol>
 				</div>
@@ -687,21 +687,118 @@
 			</div>
 		</footer>
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-		<div class="modal"  id="myModal" tabindex="-1" role="dialog">
+		<div class="modal"  id="pendidikanModal" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Modal title</h5>
+						<h5 class="modal-title">{{ modalfor }}</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>Modal body text goes here.</p>
+						<div class="row">
+							<div class="col-12">
+								<div class="card mx-auto pl-2">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-2 p-0">
+												<div class="card">
+													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="text-head-pt">
+													<h5 class="mb-2"><b>{{ modalfor }}</b></h5>
+													<p class="mb-1">
+														Jl. Terusan Jend. Sudirman, Cibeber, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat
+														<br>
+													</p>
+													<button class="btn btn-info btn-sm">Lihat Profil</button>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">Save changes</button>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal"  id="PtModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">{{ modalfor }}</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-12">
+								<div class="card mx-auto pl-2">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-2 p-0">
+												<div class="card">
+													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="text-head-pt">
+													<h5 class="mb-2"><b>PT. WAHANA BAKTI</b></h5>
+													<p class="mb-1">
+														JL. Doktor Setiabudi No. 45 Jakarta Selatan
+														<br>
+														<b>Bidang Usaha :</b> WAREHOUSE/PERGUDANGAN
+													</p>
+													<button class="btn btn-info btn-sm">Lihat Profil</button>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal"  id="bidangModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">{{ modalfor }}</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-12">
+								<div class="card mx-auto pl-2">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-2 p-0">
+												<div class="card">
+													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="text-head-pt">
+													<h5 class="mb-2"><b>Kegiatan {{ modalfor }}</b></h5>
+													<p class="mb-1">
+													</p>
+													<button class="btn btn-info btn-sm">Lihat Profil</button>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -710,250 +807,266 @@
 </template>
 
 <style>
-.card-pendidikan-list:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.card-pt-list:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.card-bidang-list:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.cap-card-kegiatan{
-	font-weight: 450;
-}
-.img-pendidikan-logo{
-	width: 55% !important;
-	padding: 0px !important;
-	align-self: center;
-}
-#about .about-img img {
-	width: 90%;
-	/*border: 8px solid #fff;*/
-	transition: .5s;
-}
-#about .about-img img:hover {
-	width: 90%;
-	transform: scale(1.1);
-}
-.card{
-	border-color: #fff;
-}
-.card-img {
-	max-width: 100% !important;
-	padding: 0px !important;
-}
-#footer{
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
-.back-to-top {
-	background: #fcf103 !important;
-	color: #132019 !important;
-}
-@media screen and (max-width: 600px) {
+	.card-pendidikan-list:hover{
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	.card-pt-list:hover{
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	.card-bidang-list:hover{
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	.cap-card-kegiatan{
+		font-weight: 450;
+	}
+	.img-pendidikan-logo{
+		width: 55% !important;
+		padding: 0px !important;
+		align-self: center;
+	}
 	#about .about-img img {
-		width: 100%;
-		padding: 50px 118px;
+		width: 90%;
+		/*border: 8px solid #fff;*/
+		transition: .5s;
 	}
 	#about .about-img img:hover {
-		width: 100%;
-		transform: scale(1.1) !important;
+		width: 90%;
+		transform: scale(1.1);
+	}
+	.card{
+		border-color: #fff;
+	}
+	.card-img {
+		max-width: 100% !important;
+		padding: 0px !important;
 	}
 	#footer{
-		text-align: center;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	}
-}
-#about .about-content {
-	padding-top: 14px !important;
-}
-.animated {
-	background-image: url(/css/images/logo.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	padding-top:95px;
-	margin-bottom:60px;
-	-webkit-animation-duration: 10s;
-	animation-duration: 10s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-20px);
+	.back-to-top {
+		background: #fcf103 !important;
+		color: #132019 !important;
 	}
-	100% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
+	@media screen and (max-width: 600px) {
+		#about .about-img img {
+			width: 100%;
+			padding: 50px 118px;
+		}
+		#about .about-img img:hover {
+			width: 100%;
+			transform: scale(1.1) !important;
+		}
+		#footer{
+			text-align: center;
+		}
 	}
-}
-
-@keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-20px);
+	#about .about-content {
+		padding-top: 14px !important;
 	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
+	.animated {
+		background-image: url(/css/images/logo.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		padding-top:95px;
+		margin-bottom:60px;
+		-webkit-animation-duration: 10s;
+		animation-duration: 10s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
 	}
-}
 
-.fadeInLeft {
-	-webkit-animation-name: fadeInLeft;
-	animation-name: fadeInLeft;
-} 
-animation-name: fadeInDown;
+	@-webkit-keyframes fadeInLeft {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateX(-20px);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+		}
+	}
 
-:root {
-	--level-2-kegiatan: #2e4a49;
-}
+	@keyframes fadeInLeft {
+		0% {
+			opacity: 0;
+			transform: translateX(-20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
 
-ol {
-	list-style: none;
-}
+	.fadeInLeft {
+		-webkit-animation-name: fadeInLeft;
+		animation-name: fadeInLeft;
+	} 
+	animation-name: fadeInDown;
 
-.container {
-	max-width: 1000px;
-	padding: 0 10px;
-	margin: 0 auto;
-}
+	:root {
+		--level-2-kegiatan: #2e4a49;
+	}
 
-.rectangle {
-	position: relative;
-	padding: 20px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
+	ol {
+		list-style: none;
+	}
 
+	.container {
+		max-width: 1000px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
 
-/* LEVEL-2 STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.level-2-kegiatan-wrapper {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.level-2-kegiatan-wrapper::before {
-	content: "";
-	position: absolute;
-	top: -20px;
-	left: 16.6%;
-	width: 66.7%;
-	height: 2px;
-	background: var(--black);
-}
-
-.level-2-kegiatan-wrapper::after {
-	display: none;
-	content: "";
-	position: absolute;
-	left: -20px;
-	bottom: -20px;
-	width: calc(100% + 20px);
-	height: 2px;
-	background: var(--black);
-}
-
-.level-2-kegiatan-wrapper li {
-	position: relative;
-}
-
-.level-2-kegiatan-wrapper > li::before {
-	content: "";
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 2px;
-	height: 20px;
-	background: var(--black);
-}
-
-.level-2-kegiatan {
-	width: 70%;
-	margin: 0 auto 40px;
-	background: var(--level-2-kegiatan);
-	color: #ffffff;
-}
-
-.level-2-kegiatan::before {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 2px;
-	height: 0px;
-	background: var(--black);
-}
-
-.level-2-kegiatan::after {
-	display: none;
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0%;
-	transform: translate(-100%, -50%);
-	width: 20px;
-	height: 2px;
-	background: var(--black);
-}
-
-
-
-/* MQ STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 700px) {
 	.rectangle {
-		padding: 20px 10px;
+		position: relative;
+		padding: 20px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 	}
 
-	.level-1,
-	.level-2 {
-		width: 100%;
+
+	/* LEVEL-2 STYLES
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.level-2-kegiatan-wrapper {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.level-1 {
-		margin-bottom: 20px;
+	.level-2-kegiatan-wrapper::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 16.6%;
+		width: 66.7%;
+		height: 2px;
+		background: var(--black);
 	}
 
-	.level-1::before,
-	.level-2-wrapper > li::before {
+	.level-2-kegiatan-wrapper::after {
 		display: none;
-	}
-
-	.level-2-wrapper,
-	.level-2-wrapper::after,
-	.level-2::after {
-		display: block;
-	}
-
-	.level-2-wrapper {
-		width: 90%;
-		margin-left: 10%;
-	}
-
-	.level-2-wrapper::before {
+		content: "";
+		position: absolute;
 		left: -20px;
-		width: 2px;
-		height: calc(100% + 40px);
+		bottom: -20px;
+		width: calc(100% + 20px);
+		height: 2px;
+		background: var(--black);
 	}
 
-	.level-2-wrapper > li:not(:first-child) {
-		margin-top: 50px;
+	.level-2-kegiatan-wrapper li {
+		position: relative;
 	}
-}
+
+	.level-2-kegiatan-wrapper > li::before {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 20px;
+		background: var(--black);
+	}
+
+	.level-2-kegiatan {
+		width: 70%;
+		margin: 0 auto 40px;
+		background: var(--level-2-kegiatan);
+		color: #ffffff;
+	}
+
+	.level-2-kegiatan::before {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 0px;
+		background: var(--black);
+	}
+
+	.level-2-kegiatan::after {
+		display: none;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		transform: translate(-100%, -50%);
+		width: 20px;
+		height: 2px;
+		background: var(--black);
+	}
+
+
+
+	/* MQ STYLES
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	@media screen and (max-width: 700px) {
+		.rectangle {
+			padding: 20px 10px;
+			font-size: 15px;
+		}
+
+		.level-1,
+		.level-2 {
+			width: 100%;
+		}
+
+		.level-1 {
+			margin-bottom: 20px;
+		}
+
+		.level-1::before,
+		.level-2-wrapper > li::before {
+			display: none;
+		}
+
+		.level-2-wrapper,
+		.level-2-wrapper::after,
+		.level-2::after {
+			display: block;
+		}
+
+		.level-2-wrapper {
+			width: 90%;
+			margin-left: 10%;
+		}
+
+		.level-2-wrapper::before {
+			left: -20px;
+			width: 2px;
+			height: calc(100% + 40px);
+		}
+
+		.level-2-wrapper > li:not(:first-child) {
+			margin-top: 50px;
+		}
+	}
 </style>
 
 <script>
 export default{
+	data(){
+		return{
+			modalfor: ''
+		}
+	},
 	methods:{
-		openModalPendidikan(){
+		openModalPendidikan(el){
+			this.modalfor = el;
+			$('#pendidikanModal').modal('show')
+		},
+		openModalPt(el){
+			this.modalfor = el;
+			$('#PtModal').modal('show')
+		},
+		openModalBidang(el){
+			this.modalfor = el;
+			$('#bidangModal').modal('show')
 		}
 	}
 };

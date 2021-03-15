@@ -12,8 +12,7 @@ import "@/assets/css/aos/aos.css";
 import "@/assets/css/style.css";
 
 
-import "@/assets/js/bootstrap.bundle.min.js";
 import "@/assets/js/owl.carousel/owl.carousel.min.js";
-import "@/assets/js/script.js";
+import "@/assets/js/main.js";
 
 createApp(App).use(router).mount('#app')
