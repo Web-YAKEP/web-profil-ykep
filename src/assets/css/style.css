@@ -559,17 +559,6 @@ section {
   position: relative;
 }
 
-#about .about-img img {
-  width: 90%;
-  /*border: 8px solid #fff;*/
-  transition: .5s;
-}
-
-#about .about-img img:hover {
-  width: 100%;
-  transform: scale(1.03);
-}
-
 #about .about-img::before {
   position: absolute;
   left: -31px;
@@ -1656,12 +1645,25 @@ section {
     border-radius: 1rem;
     border-color: #fcf103 !important;
 }
-.text-sambutan{
+.text-sambutan {
     padding-right: 8em;
     padding-left: 3em;
     padding-top: 4em;
-}
-
+  }
+  @media screen and (max-width: 600px) {
+    .text-sambutan {
+      padding: 0px 52px 52px 52px;
+    }
+    .card .head {
+      margin-top: 2em;
+    }
+    .tag-judul-berita {
+        margin-top: 4.5em !important;
+    }
+    .mt-f-3{
+      margin-top: 5em;
+    }
+  }
 .divider-custom-2 {
     margin: 1.25rem 0 1.5rem;
     width: 100%;
@@ -1669,13 +1671,31 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .divider-custom-2 .divider-custom-line-2 {
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
-    background-color:  #fcf103;
+    background-color:  #009f65;
     border-radius: 1rem;
-    border-color:  #fcf103 !important;
+    border-color:  #009f65 !important;
+}
+
+.divider-custom-3 {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom-3 .divider-custom-line-3 {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #fcf103;
+    border-radius: 1rem;
+    border-color: #fcf103 !important;
 }
 
 .bg-5{
@@ -1686,23 +1706,28 @@ section {
   max-width: 100% !important;
   padding: 0px !important;
 }
-.tag-head{
-    padding: 2px 0px;
-    background: #2a4745;
-    color: #ffffff;
+
+.tag-head {
+    padding: 3px;
+    background: #fff;
+    border-radius: 5px;
+    color: #2b4846;
 }
 
-.tag-judul-berita{
+.tag-judul-berita {
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: #fff;
 }
 
-.tag-footer{
+.tag-footer {
     text-align: center;
-    font-size: 11px;
+    font-size: 13px;
+    color: #fff;
 }
+
 .card .head{
   width: 7em;
   border: none;
