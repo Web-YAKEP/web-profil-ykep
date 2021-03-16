@@ -70,7 +70,7 @@
 				<div class="row" data-aos="fade-up">
 					<div class="col-lg-4 col-sm-12">
 						<div class="about-img" data-aos="fade-right" data-aos-delay="100">
-							<img src="@/assets/img/ketua-ykep.png" alt="">
+							<img src="@/assets/img/ketua-ykep.jpeg" alt="">
 						</div>
 					</div>
 					<div class="col-lg-8 col-sm-12 text-sambutan">
@@ -704,17 +704,17 @@
 										<div class="row">
 											<div class="col-2 p-0">
 												<div class="card">
-													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
+													<img :src="modalsrcpend" class="img-pt-fluid">
 												</div>
 											</div>
 											<div class="col-10">
 												<div class="text-head-pt">
 													<h5 class="mb-2"><b>{{ modalfor }}</b></h5>
 													<p class="mb-1">
-														Jl. Terusan Jend. Sudirman, Cibeber, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat
+														{{ modalalamatpend }}
 														<br>
 													</p>
-													<button class="btn btn-info btn-sm">Lihat Profil</button>
+													<a v-bind:href="modalurlpend" class="btn btn-info btn-sm" target="_blank">Lihat Profil</a>
 												</div>	
 											</div>
 										</div>
@@ -743,7 +743,7 @@
 										<div class="row">
 											<div class="col-2 p-0">
 												<div class="card">
-													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
+													<img src="@/assets/img/pt-wahana-bhakti.png" class="img-pt-fluid">
 												</div>
 											</div>
 											<div class="col-10">
@@ -770,7 +770,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">{{ modalfor }}</h5>
+						<h5 class="modal-title">Kegiatan {{ modalfor }}</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -778,25 +778,8 @@
 					<div class="modal-body">
 						<div class="row">
 							<div class="col-12">
-								<div class="card mx-auto pl-2">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-2 p-0">
-												<div class="card">
-													<img src="@/assets/img/ketua-ykep.png" class="img-pt-fluid">
-												</div>
-											</div>
-											<div class="col-10">
-												<div class="text-head-pt">
-													<h5 class="mb-2"><b>Kegiatan {{ modalfor }}</b></h5>
-													<p class="mb-1">
-													</p>
-													<button class="btn btn-info btn-sm">Lihat Profil</button>
-												</div>	
-											</div>
-										</div>
-									</div>
-								</div>
+								<p class="mb-2">1. Lorem Ipsum is simply dummy text.</p>
+								<p class="pl-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 							</div>
 						</div>
 					</div>
@@ -1052,12 +1035,29 @@
 export default{
 	data(){
 		return{
-			modalfor: ''
+			modalfor: '',
+			modalalamatpend: '',
+			modalurlpend:'',
+			modalsrcpend:''
 		}
 	},
 	methods:{
 		openModalPendidikan(el){
 			this.modalfor = el;
+			if(el == 'UNJANI CIMAHI'){
+				this.modalalamatpend = "Jl. Terusan Jend. Sudirman, Cibeber, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat 40531"
+				this.modalurlpend = 'https://www.unjani.ac.id/'
+				this.modalsrcpend = require('@/assets/img/kampus-unjani-cimahi.jpg')
+			}else if(el == 'STIKES CIMAHI'){
+				this.modalalamatpend = "Jl. Terusan Jenderal Sudirman Cimahi - 40633"
+				this.modalurlpend = 'http://stikesayani.ac.id/'
+				this.modalsrcpend = require('@/assets/img/kampus-stikes-cimahi.jpg')
+			}else if(el == 'UNJANI JOGJA'){
+				this.modalalamatpend = "Jl. Ringroad Barat, Gamping Kidul, Ambarketawang, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55294"
+				this.modalurlpend = 'https://unjaya.ac.id/'
+				this.modalsrcpend = require('@/assets/img/kampus-unjani-jogja.jpg')
+			}
+			
 			$('#pendidikanModal').modal('show')
 		},
 		openModalPt(el){
