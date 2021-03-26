@@ -1,75 +1,60 @@
 <template>
 	<div>
-		<main id="main">
-			<section id="about" class="about">
-				<div class="container-fluid p-0" data-aos="fade-up">
-					<div class="row">
-						<div class="col-12">
-							<img src="@/assets/img/education.png" class="img-fluid" alt="">
+		<section id="about" class="about mt-5">
+			<div class="container-fluid p-0" data-aos="fade-up">
+				<div class="row">
+					<div class="col-12">
+						<img src="@/assets/img/baner-visi-misi.jpg" class="img-fluid header-page" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="why-us" class="why-us">
+			<div class="container-fluid p-10" data-aos="fade-up">
+				<header class="section-header">
+					<h1 class="tebal-font-1 text-center">Visi</h1>
+				</header>
+				<div class="row mt-3">
+					<div class="col-md-12">
+						<div class="why-us-content text-justify">
+							<p class="m-0 lh-2 fs-3 text-center">Terwujudnya Yayasan yang Transaparan, Maju dan Profesional guna mendukung kesejahteraan dan mencerdaskan KBAD khususnya dan masyarakat pada umumnya.</p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="why-us" class="why-us">
-				<div class="container-fluid p-10" data-aos="fade-up">
-					<header class="section-header">
-						<h1>Visi</h1>
-					</header>
-					<div class="row mt-3">
-						<div class="col-md-12">
-							<div class="why-us-content text-justify">
-								<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-									memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-									kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-									tantangan   dalam    rangka    mendukung    keberhasilan   tugas   dan   tercapainya   cita-cita   mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-								maksud   dan   tujuan   di bidang   Sosial,   Keagamaan   dan   kemanusiaan.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="why-us" class="why-us">
-				<div class="container-fluid p-10" data-aos="fade-up">
-					<header class="section-header">
-						<h1>Misi</h1>
-					</header>
-					<div class="row mt-3">
-						<div class="col-md-12">
-							<div class="why-us-content text-justify">
-								<div class="row">
-									<div class="col-2">
-										<div class="icon icon-misi"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+			</div>
+		</section>
+		<section id="why-us" class="why-us">
+			<div class="container-fluid p-10" data-aos="fade-up">
+				<header class="section-header">
+					<h1 class="tebal-font-1">Misi</h1>
+				</header>
+				<div class="row mt-3">
+					<div class="col-md-12 pl-0">
+						<div class="why-us-content text-justify">
+							<div class="row mb-5">
+								<div class="col-2 text-center">
+										<img class="img-icon-misi" src="@/assets/img/icon-misi-1.webp" alt="Card image">
 									</div>
-									<div class="col-10">
-										<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-											memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-											kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-										tantangan   dalam    rangka    mendukung    keberhasilan.</p>	
+									<div class="col-10 align-self-center">
+										<p class="m-0 lh-2 fs-2">Mengembangkan dan meningkatkan lembaga pendidikan ingkat dasar, menengah dan perguruan tinggi yang berkualitas dan bermafaat, berbasis kejuangan dan cinta tanah air.</p>	
 									</div>
 
 								</div>
-								<div class="row">
-									<div class="col-2">
-										<div class="icon icon-misi"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+								<div class="row mb-5">
+									<div class="col-2 text-center">
+										<img class="img-icon-misi" src="@/assets/img/icon-misi-2.webp" alt="Card image">
 									</div>
-									<div class="col-10">
-										<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-											memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-											kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-										tantangan   dalam    rangka    mendukung    keberhasilan.</p>	
+									<div class="col-10 align-self-center">
+										<p class="m-0 lh-2 fs-2">Menyelenggarakan dan mengembangkan bidang usaha dan investasi yang sehat, wajar dan menguntungkan dalam sektor jasa, perdagangan, indistri dan perkebunan.</p>	
 									</div>
 									
 								</div>
 								<div class="row">
-									<div class="col-2">
-										<div class="icon icon-misi"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+									<div class="col-2 text-center">
+										<img class="img-icon-misi" src="@/assets/img/icon-misi-3.webp" alt="Card image">
 									</div>
-									<div class="col-10">
-										<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-											memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-											kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-										tantangan   dalam    rangka    mendukung    keberhasilan.</p>	
+									<div class="col-10 align-self-center">
+										<p class="m-0 lh-2 fs-2">Menyalurkan bantuan Pendidikan, keagamaan dan sosial kemanusiaan bagi KBAD khususnya dan masyarakat pada umunya.</p>	
 									</div>
 									
 								</div>
@@ -79,118 +64,67 @@
 				</div>
 			</section>
 			<section id="why-us" class="why-us bg-1">
-				<div class="container-fluid p-10" data-aos="fade-up">
+				<div class="container-fluid" data-aos="fade-up">
 					<div class="row">
-						<div class="col-3">
-							<br><br>
-							<img class="img-fluid" src="@/assets/img/logo-ykep.png" >
+						<div class="col-2 align-self-center">
+							<img class="w-100" src="@/assets/img/logo-ykep.png" >
 						</div>
-						<div class="col-6 logo-text">
+						<div class="col-10 logo-text pl-5">
 							<header class="section-header">
 								<h1>LOGO</h1>
 							</header>
-							<div class="why-us-content text-left">
-								<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-									memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-									kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-									tantangan   dalam    rangka    mendukung    keberhasilan   tugas   dan   tercapainya   cita-cita   mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-								maksud   dan   tujuan   di bidang   Sosial,   Keagamaan   dan   kemanusiaan.</p>
+							<div class="row">
+								<div class="col-10 align-self-center">	
+									<p class="text-justify m-0">
+										Bentuk lambang berupa perisai (bulat telur berasal dari bentuk perisai), mengandung arti sebagai penjagaan diri atau perlindungan diri. Maknanya adalah memiliki daya tahan terhadap tantangan, hambatan dan gangguan.
+									</p>
+								</div>
+								<div class="col-2 align-self-center">	
+									<img class="w-75" src="@/assets/img/perisai.png">
+								</div>
 							</div>
-							<div class="why-us-content text-left">
-								<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-									memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-									kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-									tantangan   dalam    rangka    mendukung    keberhasilan   tugas   dan   tercapainya   cita-cita   mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-								maksud   dan   tujuan   di bidang   Sosial,   Keagamaan   dan   kemanusiaan.</p>
+							<div class="row">
+								<div class="col-10 align-self-center">	
+									<p class="text-justify m-0">
+										Lukisan lambang adalah "Kartika Eka Paksi" berlatar belakang warna merah, yang berarti burung gagah perkasa tanpa tanding menjunjung cita-cita tinggi. Maknanya bahwa Yayasan Kartika Eka Pasi sebagai Yayasan yang berbadan hukum dan berafiliasi dengan TNI Angkatan Darat senantiasa menjunjung cita-cita tingi, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati.
+									</p>
+								</div>
+								<div class="col-2 align-self-center">	
+									<img class="w-75" src="@/assets/img/garuda.png">
+								</div>
 							</div>
-							<div class="why-us-content text-left">
-								<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-									memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-									kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-									tantangan   dalam    rangka    mendukung    keberhasilan   tugas   dan   tercapainya   cita-cita   mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-								maksud   dan   tujuan   di bidang   Sosial,   Keagamaan   dan   kemanusiaan.</p>
+							<div class="row">
+								<div class="col-10 align-self-center">	
+									<p class="text-justify m-0">
+										Tulisan: Yayasan Kartika Eka Paksi berwarna kuning, berlatar belakang warna hijau dilingkari dua garis dalam dan luar berwarna kuning menunjukan nama Yayasan.
+									</p>
+								</div>
+								<div class="col-2 align-self-center">	
+									<img class="w-75" src="@/assets/img/tulisan-yayasan-eka-paksi.png">
+								</div>
 							</div>
-							<div class="why-us-content text-left">
-								<p>Yayasan   Kartika   Eka   paksi  merupakan  Yayasan  yang  senantiasa  bersemangat  dalam  bekerja,
-									memegang  teguh  kejujuran  dalam  berusaha  untuk  mencapai  kemakmuran  guna  meningkatkan
-									kesejahteraan   Keluarga   Besar   Angkatan   Darat,   dan  memiliki  daya  tahan  menghadapi  segala
-									tantangan   dalam    rangka    mendukung    keberhasilan   tugas   dan   tercapainya   cita-cita   mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-								maksud   dan   tujuan   di bidang   Sosial,   Keagamaan   dan   kemanusiaan.</p>
+							<div class="row">
+								<div class="col-10 align-self-center">	
+									<p class="text-justify m-0">
+										Teks warna lambang dihiasi oleh empat warna, yaitu: Hijau melambangkan kesuburan, kemakmuran, kesegaran, kedamaian.
+										Merah bermakna kekuatan, semangat, energi, keberanian, semangat. Putih: kejujuran,kesucian,bersih, kebebasan. Sedangkan kuning mengandung makna keagungan, kemuliaan, bahagia dan optimis.
+									</p>
+								</div>
+								<div class="col-2 align-self-center">	
+									<img class="w-75" src="@/assets/img/4-warna.png">
+								</div>
 							</div>
-						</div>
-						<div class="col-3">
-							<br><br>
-							<img class="img-fluid " src="@/assets/img/logo-ykep.png" >
 						</div>
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer id="footer" class="section-bg bg-3">
-			<div class="footer-top bg-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-lg-3">
-							<div class="footer-info">
-								<img class="img-footer" src="@/assets/img/logo-ykep.png" >
-								<br>
-								<br>
-								<p>Sistem Informasi YAKEP <br>
-								Yayasan Kartika Eka Paksi</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<div class="footer-links">
-								<h4>Peta Situs</h4>
-								<ul>
-									<li><a href="">Beranda</a></li>
-									<li><a href="">Tentang Kami</a></li>
-									<li><a href="">Visi Misi</a></li>
-									<li><a href="">Berita</a></li>
-									<li><a href="">Program</a></li>
-									<li><a href="">Kontak</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<div class="footer-links">
-								<h4>Tautan Terkait</h4>
-								<ul>
-									<li><a href="">Unjani</a></li>
-									<li><a href="">Aston</a></li>
-									<li><a href="">Green Valey Water Park</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<div class="social-links">
-								<h4>Kontak Kami</h4>
-								<p>
-									Jalan Medan Merdeka Timur No. 7,
-									RT.2/RW.1, Gambir, Kota Jakarta Pusat,
-									Daerah Khusus Ibu Kota 10110<br>
-									<strong>Phone:</strong> (021) 23549153<br>
-									<strong>Email:</strong> @gmail.com<br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="copyright">
-					<strong>Copyright &copy; 2021.</strong> All Rights Reserved
-				</div>
-			</div>
-		</footer>
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 	</div>
 </template>
-<style scope>
+<style>
+	.tebal-font-1{
+		font-weight: 800
+	}
 	.p-10{
 		padding:0em 10em !important;
 	}
@@ -200,5 +134,19 @@
 	}
 	.logo-text{
 		color: #ffffff !important;
+	}
+	.img-icon-misi{
+		width: 4em;
+	}
+	.lh-2{
+		line-height: 28px;
+	}
+	.fs-2{
+		font-size: 17px;
+		font-weight: 400;
+	}
+	.fs-3{
+		font-size: 17px;
+		font-weight: 500;
 	}
 </style>

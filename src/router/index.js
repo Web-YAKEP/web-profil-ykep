@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Beranda from '../views/Beranda.vue'
 import About from '../views/Tentang.vue'
-import AboutKegiatan from '../components/Kegiatan.vue'
 import AboutPengurus from '../components/Pengurus.vue'
 import AboutStruktur from '../components/Struktur.vue'
 import AboutSejarah from '../components/Sejarah.vue'
@@ -9,6 +8,9 @@ import Visimisi from '../components/VisiMisi.vue'
 import Program from '../components/Program.vue'
 import Berita from '../components/Berita.vue'
 import Kontak from '../components/Kontak.vue'
+import ProfilPT from '../components/ProfilPT.vue'
+import ProfilPendidikan from '../components/ProfilPendidikan.vue'
+import BacaBerita from '../components/BacaBerita.vue'
 
 const routes = [
   {
@@ -21,11 +23,6 @@ const routes = [
     name: 'about',
     component: About,
     children: [
-      {
-        path: 'kegiatan',
-        name: 'aboutkegiatan',
-        component: AboutKegiatan,         
-      },
       {
         path: 'pengurus',
         name: 'aboutpengurus',
@@ -43,6 +40,21 @@ const routes = [
       }        
     ],
     props: true
+  },
+  {
+    path: '/profil-pt',
+    name: 'profil-pt',
+    component: ProfilPT
+  },
+  {
+    path: '/profil-pendidikan',
+    name: 'profil-pendidikan',
+    component: ProfilPendidikan 
+  },
+  {
+    path: '/baca-berita',
+    name: 'bacaberita',
+    component: BacaBerita
   },
   {
     path: '/visimisi',
