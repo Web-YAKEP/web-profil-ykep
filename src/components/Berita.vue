@@ -1,34 +1,28 @@
 <template>
 	<div class="berita">
-		<section id="about" class="about mt-5">
-			<div class="container-fluid p-0">
+		<div class="container-fluid pl-0 pr-0 header-banner">
+			<img src="@/assets/img/baner-berita.jpg" class="w-100" alt="">
+		</div>
+		<div class="wrap">
+			<div class="container">
 				<div class="row">
-					<div class="col-12">
-						<img src="@/assets/img/baner-berita.jpg" class="img-fluid header-page" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="about" class="about">
-			<div class="container-fluid p-0" data-aos="fade-up">
-				<div class="row mt-5">
 					<div class="col-12">
 						<div class="text-center">
 							<div class="d-inline-block">
 								<div class="btn-toolbar mx-auto" role="toolbar" aria-label="Toolbar with button groups">
-									<div class="btn-group mr-4" role="group" aria-label="Third group">
+									<div class="btn-group mr-4 mb-4" role="group" aria-label="Third group">
 										<button type="button" class="btn btn-berita active-btn" v-on:click="get_berita()">Semua Berita</button>
 									</div>
-									<div class="btn-group mr-4" role="group" aria-label="Third group">
+									<div class="btn-group mr-4 mb-4" role="group" aria-label="Third group">
 										<button type="button" class="btn btn-berita" v-on:click="filter_by('Pendidikan')">Pendidikan</button>
 									</div>
-									<div class="btn-group mr-4" role="group" aria-label="Third group">
+									<div class="btn-group mr-4 mb-4" role="group" aria-label="Third group">
 										<button type="button" class="btn btn-berita" v-on:click="filter_by('BUMY')">BUMY</button>
 									</div>
-									<div class="btn-group mr-4" role="group" aria-label="Third group">
+									<div class="btn-group mr-4 mb-4" role="group" aria-label="Third group">
 										<button type="button" class="btn btn-berita" v-on:click="filter_by('Mitra')">MITRA</button>
 									</div>
-									<div class="btn-group mr-4" role="group" aria-label="Third group">
+									<div class="btn-group mr-4 mb-4" role="group" aria-label="Third group">
 										<button type="button" class="btn btn-berita" v-on:click="filter_by('Sosial')">Sosial & Agama</button>
 									</div>
 								</div>
@@ -37,38 +31,41 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section id="clients" class="clients">
-			<div class="container" data-aos="zoom-in">
+		</div>
+		<div class="wrap pt-0">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-sm-12 text-center"  v-for="item in data_berita">
+					<div class="col-lg-3 col-sm-12 text-center mb-4"  v-for="item in data_berita">
 						<div class="card text-white card-container-berita">
 							<div class="over-bg">
 								<img class="card-img card-img-berita" :src="item.thumbnail" alt="Card image">
 							</div>
 							<div class="card-img-overlay">
-								<div class="card head mx-auto">
+								<div class="card head berita mx-auto">
 									<div class="card-body tag-head">
 										{{ item.kategori }}
 									</div>
 								</div>
-								<p class="card-text tag-judul-berita" v-html="item.judul"></p>
-								<div class="divider-custom-2-white m-1">
-									<div class="divider-custom-line-2-white"></div>
+								<p class="judul-berita text-center" v-html="item.judul"></p>
+								<div class="tgl-berita">
+									<div class="divider-custom-2-white m-1">
+										<div class="divider-custom-line-2-white"></div>
+									</div>
+									<p class="card-text	tag-footer">
+										{{ item.tgl }}
+									</p>
 								</div>
-								<p class="card-text	tag-footer">
-									{{ item.tgl }}
-								</p>
 							</div>
 							<div class="card-footer">
-								<button v-if="!item.file" class="btn btn-outline-success btn-sm d-inline" v-on:click="bacaBerita(item.id)">Lanjut Baca <i class="fa fa-arrow-circle-right"></i></button>
-								<button v-else class="btn btn-outline-info btn-sm d-inline mr-1" v-on:click="openModalPDF(item.file)"><i class="fa fa-eye"></i> Baca Dokumen</button>
+								<button v-if="item.redirect_link" class="btn btn-outline-primary btn-sm d-inline mr-1" v-on:click="goLink(item.redirect_link)"><i class="fa fa-link"></i> Buka Tautan</button>
+								<button v-else-if="item.file" class="btn btn-outline-info btn-sm d-inline mr-1" v-on:click="openModalPDF(item.file)"><i class="fa fa-eye"></i> Baca Dokumen</button>
+								<button v-else class="btn btn-outline-success btn-sm d-inline" v-on:click="bacaBerita(item.id)">Lanjut Baca <i class="fa fa-arrow-circle-right"></i></button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 		<div class="modal"  id="openPDF" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
@@ -88,6 +85,30 @@
 	</div>
 </template>
 <style>
+	.judul-berita{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 160px;
+	}
+	.tgl-berita{
+		position: absolute;
+		bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	@media screen and (max-width: 600px){
+		.card .berita {
+			margin-top: 1em !important;
+		}
+		#openPDF .modal-dialog {
+			max-width: 100% !important;
+			top: 10%;
+		}
+	}
 	.p-10{
 		padding:0em 10em !important;
 	}
@@ -133,6 +154,9 @@
 		border-top-right-radius: 10px;
 		border-top-left-radius: 10px;
 	}
+	.card-img-overlay{
+		bottom:63px !important;
+	}
 </style>
 
 <script>
@@ -147,22 +171,22 @@
 			this.get_berita()
 		},
 		methods:{
+			goLink(link){
+				window.open(link, '_blank');
+			},
 			get_berita(){
 				axios
-				.get('https://ykep.cloudapp.web.id/api/post?page=1')
+				.get('https://ykep.cloudapp.web.id/api/post')
 				.then(response => {
 					this.data_berita = []
 					for (var i = 0; i <= (response.data.posts).length - 1; i++) {
-
-						if(response.data.posts[i].embed_video){
-							console.log('file')
-						}
 						this.data_berita.push({
 							id: response.data.posts[i].id,
 							kategori: response.data.posts[i].category.name,
 							judul: response.data.posts[i].title,
 							tgl: response.data.posts[i].published_at,
-							file: response.data.posts[i].embed_video,
+							file: response.data.posts[i].pdf,
+							redirect_link: response.data.posts[i].redirect_link,
 							narasi:'',
 							img_narasi:'',
 							thumbnail: response.data.posts[i].featured_image
@@ -176,7 +200,7 @@
 			},
 			filter_by(key){
 				axios
-				.get('https://ykep.cloudapp.web.id/api/post?page=1')
+				.get('https://ykep.cloudapp.web.id/api/post')
 				.then(response => {
 					this.data_berita = []
 					for (var i = 0; i <= (response.data.posts).length - 1; i++) {

@@ -11,6 +11,7 @@ import Kontak from '../components/Kontak.vue'
 import ProfilPT from '../components/ProfilPT.vue'
 import ProfilPendidikan from '../components/ProfilPendidikan.vue'
 import BacaBerita from '../components/BacaBerita.vue'
+import Galery from '../components/Galery.vue'
 
 const routes = [
   {
@@ -70,6 +71,11 @@ const routes = [
     path: '/berita',
     name: 'berita',
     component: Berita
+  },
+  {
+    path: '/galery',
+    name: 'galery',
+    component: Galery
   },
   {
     path: '/contact',

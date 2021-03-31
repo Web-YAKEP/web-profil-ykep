@@ -1,27 +1,21 @@
 <template>
 	<div>
-		<section id="about" class="about mt-5">
-			<div class="container-fluid p-0">
-				<div class="row">
-					<div class="col-12">
-						<img src="@/assets/img/baner-program.jpg" class="img-fluid header-page" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="why-us" class="why-us">
-			<div class="container-fluid p-10" data-aos="fade-up">
+		<div class="container-fluid pl-0 pr-0 header-banner">
+			<img src="@/assets/img/baner-program.jpg" class="w-100" alt="">
+		</div>
+		<div class="wrap">
+			<div class="container">
 				<div class="row mb-3" v-for="dataProgram of dataPrograms">
-					<div class="col-6 text-center pl-5 pr-5">
+					<div class="col text-center align-self-center">
 						<h3 class="title-program">{{ dataProgram.nama }}</h3>
 						<button class="btn btn-program btn-sm " v-on:click="openmodal(dataProgram)">BACA SELENGKAPNYA <i class="fa fa-chevron-circle-right"></i></button>
 					</div>
-					<div class="col-6">
+					<div class="col align-self-center">
 						<img class="img-program" :src="dataProgram.img" >
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 		<div class="modal"  id="programModal" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
@@ -60,6 +54,13 @@
 	@media screen and (max-width: 600px) {
 		#programModal .modal-dialog {
 			max-width: 100% !important;
+			top: 10%;
+		}
+		.title-program{
+			font-size: 19px;
+		}
+		.btn-program{
+			font-size: 11px !important;
 		}
 	}
 	#programModal .modal-dialog {

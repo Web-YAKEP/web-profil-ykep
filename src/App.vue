@@ -17,6 +17,7 @@
           <li v-on:click="setActive('visimisi')" :class="{ active: isActive('visimisi') }"><router-link class="a" to="/visimisi">Visi Misi</router-link></li>
           <li v-on:click="setActive('program')" :class="{ active: isActive('program') }"><router-link class="a" to="/program">Program</router-link></li>
           <li v-on:click="setActive('berita')" :class="{ active: isActive('berita') }"><router-link class="a" to="/berita">Berita</router-link></li>
+          <li v-on:click="setActive('galery')" :class="{ active: isActive('galery') }"><router-link class="a" to="/galery">Galery</router-link></li>
           <li v-on:click="setActive('kontak')" :class="{ active: isActive('kontak') }"><router-link class="a" to="/contact">Kontak</router-link></li>
         </ul>
       </nav>
@@ -26,11 +27,11 @@
 
 <router-view/>
 
-<footer id="footer" class="section-bg bg-3 mt-5">
+<footer id="footer" class="section-bg bg-3">
   <div class="footer-top bg-2">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-12 col-lg-3">
           <div class="footer-info text-center">
             <img class="img-footer" src="@/assets/img/logo-ykep.png" >
             <br>
@@ -38,34 +39,40 @@
             <p>Yayasan Kartika Eka Paksi</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 pl-5">
+        <div class="col-md-12 col-lg-3 pl-5">
           <div class="footer-links">
-            <h4>Peta Situs</h4>
-            <ul>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Beranda</a></li>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Tentang Kami</a></li>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Visi Misi</a></li>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Berita</a></li>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Program</a></li>
-              <li><i class="fa fa-chevron-right "></i>  <a href="">Kontak</a></li>
+            <h4 class="text-left">Peta Situs</h4>
+            <ul class=" text-left">
+              <div class="row">
+                <div class="col"> 
+                 <li><i class="fa fa-chevron-right "></i>  <a href="">Beranda</a></li>
+                 <li><i class="fa fa-chevron-right "></i>  <a href="">Tentang Kami</a></li>
+                 <li><i class="fa fa-chevron-right "></i>  <a href="">Visi Misi</a></li>
+                 <li><i class="fa fa-chevron-right "></i>  <a href="">Berita</a></li>
+                </div>
+                <div class="col"> 
+                  <li><i class="fa fa-chevron-right "></i>  <a href="">Program</a></li>
+                  <li><i class="fa fa-chevron-right "></i>  <a href="">Kontak</a></li>
+                </div> 
+              </div>
             </ul>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-12 col-lg-3 pl-5">
           <div class="footer-links">
-            <h4>Tautan Terkait</h4>
-            <ul>
+            <h4 class="text-left">Tautan Terkait</h4>
+            <ul class="text-left">
               <li><i class="fa fa-chevron-right "></i>  <a href="">Unjani</a></li>
               <li><i class="fa fa-chevron-right "></i>  <a href="">Aston</a></li>
               <li><i class="fa fa-chevron-right "></i>  <a href="">Green Valey Water Park</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="social-links">
-            <h4>Kontak Kami</h4>
+        <div class="col-md-6 col-lg-3 pl-5">
+          <div class="footer-links">
+            <h4 class="text-left">Kontak Kami</h4>
             <div class="row">
-              <div class="col-2 text-right pr-0">
+              <div class="col-2 text-left pr-0">
                 <i class="fa fa-home text-white" style="font-size: 24px;" aria-hidden="true"></i>
               </div>
               <div class="col-10">
@@ -77,22 +84,22 @@
               </div>
             </div>
              <div class="row">
-              <div class="col-2 text-right pr-0">
+              <div class="col-2 text-left pr-0">
                 <i class="fa fa-phone text-white" style="font-size: 24px;" aria-hidden="true"></i>
               </div>
               <div class="col-10">
                 <p class="text-left mb-3">
-                 (021) 23549153
+                  (021) 3840424
                 </p>  
               </div>
             </div>
              <div class="row">
-              <div class="col-2 text-right pr-0">
+              <div class="col-2 text-left pr-0">
                 <i class="fa fa-envelope text-white" style="font-size: 24px;" aria-hidden="true"></i>
               </div>
               <div class="col-10">
                 <p class="text-left m-0">
-                  abcdefgh@gmail.com
+                  yayasankartikaekapaksi@gmail.com
                 </p>  
               </div>
             </div>

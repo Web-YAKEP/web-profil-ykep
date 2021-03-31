@@ -4,7 +4,7 @@ import router from './router'
 
 import "@/assets/css/bootstrap.min.css";
 import "@/assets/css/font-awesome/css/font-awesome.min.css";
-import "@/assets/css/aos/aos.css";
+
 import "@/assets/css/style.css";
 import "@/assets/js/bootstrap.min.js";
 

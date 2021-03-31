@@ -26,182 +26,194 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		
-			<section id="welcome" class="welcome">
-				<div class="container-fluid" data-aos="fade-up">
-					<header class="section-header">
-						<h3>Sekilas Tentang YKEP</h3>
-						<p>Yayasan Kartika Eka Paksi</p>
-						<div class="divider-custom">
-							<div class="divider-custom-line"></div>
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-10 mx-auto">
+						<header class="section-header">
+							<h3>Sekilas Tentang YKEP</h3>
+							<p>Yayasan Kartika Eka Paksi</p>
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+							</div>
+						</header>
+						<div class="row mt-3">
+							<div class="col-md-12">
+								<div class="text-justify">
+									<p class="m-0">
+										Yayasan Kartika Eka paksi merupakan Yayasan yang senantiasa bersemangat dalam bekerja,
+										memegang teguh kejujuran dalam berusaha untuk mencapai kemakmuran guna meningkatkan
+										kesejahteraan Keluarga Besar Angkatan Darat, dan memiliki daya tahan menghadapi segala
+										tantangan dalam rangka mendukung keberhasilan tugas dan tercapainya cita-cita mulia
+										TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
+										maksud dan tujuan di bidang Sosial, Keagamaan dan kemanusiaan.
+									</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap pt-0">
+			<div class="container">
+				<header class="section-header text-center">
+					<h4>Video Sambutan Ketua</h4>
+					<div class="divider-custom-3">
+						<div class="divider-custom-line-3"></div>
+					</div>
+				</header>
+				<div class="row">
+					<div class="col-md-12 col-lg-6 mx-auto">	
+						<div class="embed-responsive mx-auto embed-responsive-16by9">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dkQousb_lvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-					</header>
-					<div class="row mt-3">
-						<div class="col-md-12">
-							<div class="welcome-content text-justify">
-								<p>
-									Yayasan Kartika Eka paksi merupakan Yayasan yang senantiasa bersemangat dalam bekerja,
-									memegang teguh kejujuran dalam berusaha untuk mencapai kemakmuran guna meningkatkan
-									kesejahteraan Keluarga Besar Angkatan Darat, dan memiliki daya tahan menghadapi segala
-									tantangan dalam rangka mendukung keberhasilan tugas dan tercapainya cita-cita mulia
-									TNI Angkatan Darat, yaitu keluhuran nusa dan bangsa serta keprajuritan sejati. Yayasan mempunyai
-									maksud dan tujuan di bidang Sosial, Keagamaan dan kemanusiaan.
-								</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="wrap bg-1 p-0">
+			<div class="container-fluid">	
+				<div class="row">
+					<div class="col-lg-3 col-sm-12 p-0">
+						<div class="sambutan-img text-center">
+							<p class="mb-0 text-white text-nama-ketua"><i>Tatang Sulaiman, S.Sos, M.Si. <br> Ketua Pengurus YAKEP </i></p>
+							<img src="@/assets/img/ketua-ykep.webp" alt="" class="w-100">
+						</div>
+					</div>
+					<div class="col-lg-8 col-sm-12 align-self-center padding-sambuatn-sm">	
+							<p class="m-0 text-white text-center mx-auto text-sambuatn">	
+							Puji syukur marilah kita panjatkan kehadirat Yang Maha Esa atas limpahan karunia dan hidayahnya, sehingga kita masih dapat melaksanakan dengan baik tugas dan kewajiban kita semua. Sistem Informasi/Web Yayasan Kartika Eka Paksi merupakan sarana komunikasi informasi, sosialisasi dan promosi YKEP dalam menjalankan amanah, perputaran roda organisasi untuk mewujudkan tujuan sesuai visi dan misi, mensejahterakan keluarga besar angkatan darat ikut serta mencerdaskan bangsa dan keluarga besar angkatan darat melalui pendidikan di Universitas Jenderal Ahmad Yani.
+							<br><br>Saya berharap adanya masukan yang konstruktif sehingga kita dapat mengambil hikmah dari setiap hidup kita.
+							<br><br>Akhirnya saya mengucapkan terimakasih atas kerjasama dan partisipasinya dalam mengembangkan Yayasan Kartika EKa Paksi.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="container">
+				<header class="section-header text-center">
+					<h3>Kegiatan Yayasan</h3>
+					<div class="divider-custom-3">
+						<div class="divider-custom-line-3"></div>
+					</div>
+				</header>
+				<div class="row">
+					<div class="col-md-12 col-lg-6 text-center">
+						<div class="row">
+							<div class="col-md-6 col-lg-5 mx-auto">
+								<div class="card border-0">
+									<img class="card-img" src="@/assets/img/icon-kegiatan-pendidikan.png" alt="Card image">
+								</div>
+							</div>	
+						</div>
+						<div class="row mt-3 justify-content-md-center">
+							<div class="col-lg-4 col-sm-12">
+								<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI CIMAHI')">
+									<img class="img-pendidikan-logo" src="@/assets/img/logo-unjani.png" alt="Card image cap">
+									<div class="card-body">
+										<p class="card-text mb-0">UNJANI CIMAHI</p>
+										<div class="divider-custom-2 mt-2">
+											<div class="divider-custom-line-2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-12">
+								<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('STIKES CIMAHI')">
+									<img class="img-pendidikan-logo" src="@/assets/img/logo-stikes.png" alt="Card image cap">
+									<div class="card-body">
+										<p class="card-text mb-0">STIKES CIMAHI</p>
+										<div class="divider-custom-2 mt-2">
+											<div class="divider-custom-line-2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-12">
+								<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI JOGJA')">
+									<img class="img-pendidikan-logo" src="@/assets/img/logo-unjani-jogja.webp" alt="Card image cap">
+									<div class="card-body">
+										<p class="card-text mb-0">UNJANI JOGJA</p>
+										<div class="divider-custom-2 mt-2">
+											<div class="divider-custom-line-2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6 text-center">
+						<div class="row">
+							<div class="col-md-6 col-lg-5  mx-auto">
+								<div class="card text-white border-0" style="align-items: center;">
+									<img class="card-img w-88" src="@/assets/img/icon-bidang-usaha-investasi.png" alt="Card image">
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center mt-4 mx-auto">
+							<div class="col-lg-3 col-sm-12 mb-4 card-pt-list" v-on:click="openModalPt('BUMY')">
+								<img class="card-img img-card-pt" src="@/assets/img/icon-kegiatan-BUMY.png" alt="Card image">
+							</div>
+							<div class="col-lg-3 col-sm-12 card-pt-list" v-on:click="openModalPt('MITRA')">
+								<img class="card-img img-card-pt" src="@/assets/img/icon-kegiatan-MITRA.png" alt="Card image">
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<section id="sambutan" class="sambutan bg-1">
-				<div class="row" data-aos="fade-up">
-					<div class="col-lg-4 col-sm-12">
-						<div class="nama-ketua">
-							<div class="card card-nama-ketua pl-2 pr-4 pt-2 pb-2">
-								<p class="mb-0 text-white"><i>Tatang Sulaiman, S.Sos, M.Si. <br> Ketua Pengurus YAKEP </i></p>
-							</div>
-						</div>
-						<div class="sambutan-img" data-aos="fade-right" data-aos-delay="100">
-							<img src="@/assets/img/ketua-ykep.webp" alt="">
-						</div>
+			</div>
+			<div class="container mt-5">
+				<div class="row mx-auto row-bidang">
+					<div class="col-lg-4 col-md-12 card-bidang-list text-center">
+						<img class="w-45 btn-sosial" src="@/assets/img/tombol-kegiatan-bidang-sosial.png" alt="Card image">
+						<img class="card-img-bidang w-75" src="@/assets/img/bg-gambar-kegiatan-sosial.png" alt="Card image"  v-on:click="openModalBidang('Bidang Sosial')">
 					</div>
-					<div class="col-lg-8 col-sm-12 text-sambutan align-self-center">
-						<div class="sambutan-content text-justify" data-aos="fade-left" data-aos-delay="100">
-							<p class="m-0">
-								Puji syukur marilah kita panjatkan kehadirat Yang Maha Esa atas limpahan karunia dan hidayahnya, sehingga kita masih dapat melaksanakan dengan baik tugas dan kewajiban kita semua. Sistem Informasi/Web Yayasan Kartika Eka Paksi merupakan sarana komunikasi informasi, sosialisasi dan promosi YKEP dalam menjalankan amanah, perputaran roda organisasi untuk mewujudkan tujuan sesuai visi dan misi, mensejahterakan keluarga besar angkatan darat ikut serta mencerdaskan bangsa dan keluarga besar angkatan darat melalui pendidikan di Universitas Jenderal Ahmad Yani.
-								<br>Saya berharap adanya masukan yang konstruktif sehingga kita dapat mengambil hikmah dari setiap hidup kita.
-								<br>Akhirnya saya mengucapkan terimakasih atas kerjasama dan partisipasinya dalam mengembangkan Yayasan Kartika EKa Paksi.
-							</p>
-						</div>
+					<div class="col-lg-4 col-md-12 mb-5 card-bidang-list text-center margin-list-sosial">
+						
+						<img class="w-45 btn-agama" src="@/assets/img/tombol-kegiatan-bidang-keagamaan.png" alt="Card image">
+						<img class="card-img-bidang w-75" src="@/assets/img/bg-gambar-kegiatan-keagamaan.png" alt="Card image"  v-on:click="openModalBidang('Bidang Keagamaan')">
+					</div>
+					<div class="col-lg-4 col-md-12 card-bidang-list text-center">
+						
+						<img class="w-45 btn-sosial" src="@/assets/img/tombol-kegiatan-bidang-kemanusiaan.png" alt="Card image">
+						<img class="card-img-bidang w-75" src="@/assets/img/bg-gambar-kegiatan-kemanusiaan.png" alt="Card image" v-on:click="openModalBidang('Bidang Kemanusiaan')">
 					</div>
 				</div>
-			</section>
-
-			<section id="clients" class="clients">
-				<div class="container" data-aos="zoom-in">
-					<header class="section-header text-center">
-						<h3>Kegiatan Yayasan</h3>
-						<div class="divider-custom-3">
-							<div class="divider-custom-line-3"></div>
-						</div>
-					</header>
-					<div class="row">
-						<div class="col text-center">
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="container berita-beranda">
+				<header class="section-header text-center">
+					<h3>Berita Terkini</h3>
+					<div class="divider-custom-3">
+						<div class="divider-custom-line-3"></div>
+					</div>
+				</header>
+				<vueper-slides
+				class="no-shadow"
+				:visible-slides="4"
+				slide-multiple
+				:gap="4"
+				:slide-ratio="1 / 4"
+				:dragging-distance="200"
+				:breakpoints="{ 800: { visibleSlides: 1, slideMultiple: 1 } }">
+					<vueper-slide  v-for="(item,i) in data_berita" :key="i">
+						<template v-slot:content>
 							<div class="row">
-								<div class="col-lg-4 col-sm-6 mx-auto">
-									<div class="card text-white border-0">
-										<img class="card-img" src="@/assets/img/icon-kegiatan-pendidikan.webp" alt="Card image">
-									</div>
-								</div>	
-							</div>
-							<div class="row mt-3 justify-content-md-center">
-								<div class="col-lg-4 col-sm-5">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI CIMAHI')">
-										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-unjani.png" alt="Card image cap">
-										<div class="card-body">
-											<p class="card-text mb-0">UNJANI CIMAHI</p>
-											<div class="divider-custom-2 mt-2">
-												<div class="divider-custom-line-2"></div>
-											</div>
+								<div class="col-12">
+									<div class="card text-white card-container-berita">
+										<div class="over-bg">
+											<img class="card-img card-img-berita" :src="item.thumbnail" alt="Card image">
 										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-sm-5">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('STIKES CIMAHI')">
-										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-stikes.png" alt="Card image cap">
-										<div class="card-body">
-											<p class="card-text mb-0">STIKES CIMAHI</p>
-											<div class="divider-custom-2 mt-2">
-												<div class="divider-custom-line-2"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-sm-5">
-									<div class="card text-center border-0 card-pendidikan-list" v-on:click="openModalPendidikan('UNJANI JOGJA')">
-										<img class="card-img-top img-pendidikan-logo" src="@/assets/img/logo-unjani-jogja.webp" alt="Card image cap">
-										<div class="card-body">
-											<p class="card-text mb-0">UNJANI JOGJA</p>
-											<div class="divider-custom-2 mt-2">
-												<div class="divider-custom-line-2"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col text-center">
-							<div class="row">
-								<div class="col-lg-4 col-sm-6 mx-auto">
-									<div class="card text-white border-0">
-										<img class="card-img" src="@/assets/img/icon-kegiatan-pt.webp" alt="Card image">
-										
-									</div>
-								</div>
-							</div>
-							<div class="row justify-content-md-center mt-3">
-								<div class="col-lg-3 col-sm-5">
-									<div class="card border-0 card-pt-list" v-on:click="openModalPt('BUMY')">
-										<img class="card-img" src="@/assets/img/icon-kegiatan-BUMY.png" alt="Card image">
-										
-									</div>
-								</div>
-								<div class="col-lg-3 col-sm-5">
-									<div class="card border-0 card-pt-list" v-on:click="openModalPt('MITRA')">
-										<img class="card-img" src="@/assets/img/icon-kegiatan-MITRA.png" alt="Card image">
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container mt-5" data-aos="zoom-in">
-					<div class="row mx-auto row-bidang">
-						<div class="col-2 pr-4 pl-4 card-bidang-list">
-							<img class="card-img" src="@/assets/img/tombol-kegiatan-bidang-sosial.webp" alt="Card image"  v-on:click="openModalBidang('Bidang Sosial')">
-						</div>
-						<div class="col-2 pr-4 pl-4 card-bidang-list">
-							<img class="card-img" src="@/assets/img/tombol-kegiatan-bidang-keagamaan.webp" alt="Card image"  v-on:click="openModalBidang('Bidang Keagamaan')">
-						</div>
-						<div class="col-2 pr-4 pl-4 card-bidang-list">
-							<img class="card-img" src="@/assets/img/tombol-kegiatan-bidang-kemanusiaan.webp" alt="Card image" v-on:click="openModalBidang('Bidang Kemanusiaan')">
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="clients" class="clients">
-				<div class="container berita-beranda" data-aos="zoom-in">
-					<header class="section-header text-center">
-						<h3>Berita Terkini</h3>
-						<div class="divider-custom-3">
-							<div class="divider-custom-line-3"></div>
-						</div>
-					</header>
-					<vueper-slides
-						class="no-shadow"
-						:visible-slides="4"
-						slide-multiple
-						:gap="4"
-						:slide-ratio="1 / 4"
-						:dragging-distance="200"
-						:breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
-						<vueper-slide  v-for="(item,i) in data_berita" :key="i">
-							<template v-slot:content>
-								<div class="row">
-									<div class="col-12">
-										<div class="card text-white card-container-berita">
-											<div class="over-bg">
-												<img class="card-img card-img-berita" :src="item.thumbnail" alt="Card image">
-											</div>
-											<div class="card-img-overlay">
-												<div class="card head mx-auto">
-													<div class="card-body tag-head text-center">
-														{{ item.kategori }}
-													</div>
+										<div class="card-img-overlay">
+											<div class="card head berita mx-auto">
+												<div class="card-body tag-head text-center">
+													{{ item.kategori }}
 												</div>
-												<p class="card-text tag-judul-berita" v-html="item.judul"></p>
+											</div>
+											<p class="judul-berita text-center" v-html="item.judul"></p>
+											<div class="tgl-berita">
 												<div class="divider-custom-2-white m-1">
 													<div class="divider-custom-line-2-white"></div>
 												</div>
@@ -209,18 +221,20 @@
 													{{ item.tgl }}
 												</p>
 											</div>
-											<div class="card-footer text-center">
-												<button v-if="!item.file" class="btn btn-outline-success btn-sm d-inline" v-on:click="bacaBerita(item.id)">Lanjut Baca <i class="fa fa-arrow-circle-right"></i></button>
-												<button v-else class="btn btn-outline-info btn-sm d-inline mr-1" v-on:click="openModalPDF(item.file)"><i class="fa fa-eye"></i> Baca Dokumen</button>
-											</div>
+										</div>
+										<div class="card-footer text-center">
+											<button v-if="item.redirect_link" class="btn btn-outline-primary btn-sm d-inline mr-1" v-on:click="goLink(item.redirect_link)"><i class="fa fa-link"></i> Buka Tautan</button>
+											<button v-else-if="item.file" class="btn btn-outline-info btn-sm d-inline mr-1" v-on:click="openModalPDF(item.file)"><i class="fa fa-eye"></i> Baca Dokumen</button>
+											<button v-else class="btn btn-outline-success btn-sm d-inline" v-on:click="bacaBerita(item.id)">Lanjut Baca <i class="fa fa-arrow-circle-right"></i></button>
 										</div>
 									</div>
 								</div>
-							</template>
-						</vueper-slide>
-					</vueper-slides>
-				</div>
-			</section>
+							</div>
+						</template>
+					</vueper-slide>
+				</vueper-slides>
+			</div>
+		</div>
 
 			<section id="clients" class="clients pt-0">
 				<div class="container" data-aos="zoom-in">
@@ -283,7 +297,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Kegiatan PT ({{ modalfor }})</h5>
+						<h5 class="modal-title">Kegiatan Bidang Usaha & Investasi ({{ modalfor }})</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -373,6 +387,79 @@
 </template>
 
 <style>
+	@media screen and (max-width: 800px) {
+		.padding-sambuatn-sm{
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.sambutan-img{
+			padding-top: 30px;
+		}
+		.sambutan-img .w-100{
+			width: 	60% !important;
+		}
+		.text-nama-ketua {
+			left: 25% !important;
+			font-size: 11px !important;
+		}
+		.img-pendidikan-logo{
+			width: 	20% !important;
+		}
+		.img-card-pt{
+			width: 	35% !important;
+		}
+		.vueperslides__bullets:not(.vueperslides__bullets--outside) {
+			color: #20362a;
+		}
+		#pendidikanModal .modal-dialog {
+			max-width: 100% !important;
+			max-height: 100% !important;
+			top: 30% !important;
+		}
+		#PtModal .modal-dialog {
+			max-width: 100% !important;
+			top: 10% !important;
+		}
+		#bidangModal .modal-dialog {
+			max-width: 100% !important;
+			top: 10% !important;
+		}
+		.margin-list-sosial{
+			margin-top: 2em;
+		}
+	}
+	.w-45{
+		width: 45%;
+	}
+	.w-88{
+		width: 88% !important;
+	}
+	.text-sambuatn{
+		width: 	80%;
+		font-size: 	14px;
+	}
+	.text-nama-ketua{
+		position: absolute;
+		bottom: 20px;
+		left: 25px;
+		background-image: linear-gradient(to right, rgb(42 71 69), rgb(42 71 69 / 2%));
+		font-size: 14px;
+		padding: 5px 20px;
+		font-weight: 500;
+	}
+	.btn-agama{
+		position: absolute;
+		left: 28%;
+		top: 10%;
+	}
+	.btn-sosial{
+		position: absolute;
+		bottom: 15%;
+		left: 28%;
+	}
+	.card-img-bidang{
+		width: 70%;
+	}
 	.row-bidang{
 		justify-content: center;
 	}
@@ -393,7 +480,7 @@
 		border-radius: 20px;
 	}
 	#openPDF .modal-dialog {
-		max-width: 50%;
+		max-width: 90%;
 	}
 	#openPDF .modal-dialog .modal-content{
 		border-radius: 15px;
@@ -447,7 +534,6 @@
 	.card-footer{
 		background-color: transparent !important;
 		border: none !important;
-		z-index:9999;
 	}
 	.card-pendidikan-list:hover{
 		transform: scale(1.1);
@@ -465,7 +551,7 @@
 		font-weight: 450;
 	}
 	.img-pendidikan-logo{
-		width: 55% !important;
+		width: 55%;
 		padding: 0px !important;
 		align-self: center;
 	}
@@ -512,6 +598,9 @@ export default{
 		this.get_berita()
 	},
 	methods:{
+		goLink(link){
+			window.open(link, '_blank');
+		},
 		get_berita(){
 			axios
 			.get('https://ykep.cloudapp.web.id/api/post?page=1')
@@ -523,7 +612,8 @@ export default{
 						kategori: response.data.posts[i].category.name,
 						judul: response.data.posts[i].title,
 						tgl: response.data.posts[i].published_at,
-						file: response.data.posts[i].embed_video,
+						file: response.data.posts[i].pdf,
+						redirect_link: response.data.posts[i].redirect_link,
 						narasi:'',
 						img_narasi:'',
 						thumbnail: response.data.posts[i].featured_image
@@ -535,9 +625,10 @@ export default{
 			}
 			);
 		},
-		openModalPDF(){
+		openModalPDF(link){
 			$('#openPDF').modal('show')
-			PDFObject.embed("https://file-examples-com.github.io/uploads/2017/10/file-example_PDF_500_kB.pdf", "#example1", {forcePDFJS: true,height: "30em"})	
+			console.log(link)
+			PDFObject.embed(link, "#example1", {forcePDFJS: true,height: "30em"})
 		},
 		bacaBerita(id){
 			this.$router.push({ path: '/baca-berita', query: { q: id } })
@@ -606,8 +697,26 @@ export default{
 					{
 						img:  require('@/assets/img/bumy/pt-graha-kartika-anugerah.jpg'),					
 						nama: 'PT. GRAHA KARTIKA ANUGERAH',					
-						alamat: 'JL. Jenderal Sudirman Kav. 52-53, Jakarta Selatan',					
-						bidang: ''					
+						alamat: 'JL. Jenderal Sudirman Kav. 52-53, Jakarta Selatan (Kartika Towers (Aston Kartika Grogol Hotel & Conference Center, Kartika office dan Kartika Mall) Jl. Kyai Tapa No. 101. Grogol, Jakarta Barat)',					
+						bidang: 'Perhotelan, pengelolaan property, perkantoran, perjalanan wisata, konsultan pariwisata dan jasa impresariat'					
+					},
+					{
+						img:  '',					
+						nama: 'PT. SAHARA MULTI HIJAU',					
+						alamat: 'Jl. Ipik Gandamanah, Ciseureuh, Kec. Purwakarta, Kabupaten Purwakarta',					
+						bidang: 'Perumahan, Pembangunan Perumahan, Persewaan dan Konstruksi'					
+					},
+					{
+						img:  '',					
+						nama: 'PT. NIRMALA ANUGERAH SEJAHTERA',					
+						alamat: 'Jl. Ipik Gandamanah No.41 , Ciseureuh, Kec. Purwakarta, Kabupaten Purwakarta',					
+						bidang: 'Mengelola daya tarik wisata alam, wisata budaya dan wisata buatan; pertunjukkan hiburan, usaha Jasa makanan, perkemahan, usaha seni pertunjukkan dan olahraga air'					
+					},
+					{
+						img:  '',					
+						nama: 'SRIWIJAYA SPORT CENTER',					
+						alamat: 'Jl. Merdeka No. 9 Kel. 19 Ilir, Kec. Bukit Kecil, Kota Palembang',					
+						bidang: 'Usaha penginapan (hotel),  Sport, Food & Beverage,  SPA dan Sauna, Jasa Perpakiran, Ball Room dan gerai ATM'					
 					},
 					{
 						img: require('@/assets/img/bumy/pt-safira.jpg'),					
@@ -665,30 +774,6 @@ export default{
 						nama: 'PT. KARTIKA AIRLINES',					
 						alamat: 'JL. Raya Bogor Km.28 Kompleks Deta Marina',					
 						bidang: 'TRANSPORTASI'					
-					},
-					{
-						img: '',					
-						nama: 'TANAH DI CISARUA BOGOR LUAS 500 M2 DAN BANGUNAN VILA LUAS 90 M2',					
-						alamat: 'CISARUA BOGOR',					
-						bidang: ''					
-					},
-					{
-						img: '',					
-						nama: 'TANAH DI KEBAYORAN LAMA LUAS 3.344 M',					
-						alamat: 'KEBAYORAN LAMA',					
-						bidang: ''					
-					},
-					{
-						img: '',					
-						nama: 'TANAH DI CIREBON LUAS 740 M2 DAN 8.840 M2',					
-						alamat: 'CIREBON',					
-						bidang: ''					
-					},
-					{
-						img: '',					
-						nama: 'TANAH DI DESA KUTA, KEC. KUTA, KAB. BADUNG BALI LUAS 100,450 M2 (HOTEL KARTIKA PLAZA & DISCOVERY SHOPPING MALL)',
-						alamat: 'DESA KUTA, KEC. KUTA, KAB. BADUNG BALI',					
-						bidang: ''					
 					},
 					{
 						img:  require('@/assets/img/mitra/pt-indotruba-timur.jpg'),					
