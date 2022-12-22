@@ -142,7 +142,7 @@
 					formData.append('email', this.email);
 					formData.append('phone', this.nohp);
 					formData.append('message', this.pesan);
-					axios.post('https://ykep.cloudapp.web.id/entry/services/insert/question', formData)
+					axios.post('https://admin.ykep.org/entry/services/insert/question', formData)
 					.then(response => { 
 						if(response.status = 'success'){
 							$('#alert').show()

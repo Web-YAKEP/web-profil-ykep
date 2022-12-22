@@ -176,7 +176,7 @@
 			},
 			get_berita(){
 				axios
-				.get('https://ykep.cloudapp.web.id/api/post')
+				.get('https://admin.ykep.org/api/post')
 				.then(response => {
 					this.data_berita = []
 					for (var i = 0; i <= (response.data.posts).length - 1; i++) {
@@ -200,7 +200,7 @@
 			},
 			filter_by(key){
 				axios
-				.get('https://ykep.cloudapp.web.id/api/post')
+				.get('https://admin.ykep.org/api/post')
 				.then(response => {
 					this.data_berita = []
 					for (var i = 0; i <= (response.data.posts).length - 1; i++) {

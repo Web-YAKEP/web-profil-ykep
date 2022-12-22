@@ -214,7 +214,7 @@ export default{
 		},
 		loadFoto(){
 			axios
-			.get('https://ykep.cloudapp.web.id/entry/services/index/photo')
+			.get('https://admin.ykep.org/entry/services/index/photo')
 			.then(response => {
 				this.data_foto = []
 				if(response.data.status == 'success'){
@@ -237,7 +237,7 @@ export default{
 		},
 		loadVideo(){
 			axios
-			.get('https://ykep.cloudapp.web.id/entry/services/index/video')
+			.get('https://admin.ykep.org/entry/services/index/video')
 			.then(response => {
 				this.data_video = []
 				if(response.data.status == 'success'){

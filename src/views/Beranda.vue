@@ -603,7 +603,7 @@ export default{
 		},
 		get_berita(){
 			axios
-			.get('https://ykep.cloudapp.web.id/api/post?page=1')
+			.get('https://admin.ykep.org/api/post?page=1')
 			.then(response => {
 				this.data_berita = []
 				for (var i = 0; i <= (response.data.posts).length - 1; i++) {
